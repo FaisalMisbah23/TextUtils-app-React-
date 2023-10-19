@@ -2,13 +2,13 @@ import './App.css';
 import Alert from './Components/Alert';
 import Navbar from './Components/Navbar';
 import Text from './Components/Text';
-// import About from './Components/about';
+ import About from './Components/about';
 import { useState } from'react';
-//  import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   }  from "react-router-dom";
+  import {
+   BrowserRouter as Router,
+   Switch,
+   Route,
+   }  from "react-router-dom";
 
 function App() {
   const [mode,setmode]=useState("light");
@@ -40,20 +40,20 @@ function App() {
   }}
   return (
     <>
-   {/* <Router> */}
+    <Router> 
     <Navbar title="TextUtlis" mode={mode} togglemode={togglemode} />  
     <Alert alert={alert} />
     <div>
-    {/* <Switch> */}
-          {/* <Route exact path="/about"> */}
-            {/* <About/> */}
-          {/* </Route> */}
-          {/* <Route exact path="/"> */}
+     <Switch> 
+           <Route exact path="/about"> 
+            { <About/> }
+          </Route> 
+           <Route exact path="/"> 
           <Text showAlert={showAlert} heading="Enter Your Text"/>
-          {/* </Route> */}
-        {/* </Switch> */}
+           </Route> 
+         </Switch> 
         </div>
-        {/* </Router> */}
+         </Router> 
     </>
   );
 }
