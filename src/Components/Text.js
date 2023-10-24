@@ -42,12 +42,12 @@ export default function Text(props) {
   
   <textarea className="form-control" onChange={onChange} value={text} id="myBox" rows="10"></textarea>
 </div>
- <button className="btn btn-primary" onClick={ConvertUpClick}>Convert to Upper Case</button>
- <button  className="ms-2 btn btn-danger" onClick={ConvertlowClick}>Convert to Lower Case</button>
- <button  className="ms-2 btn btn-warning" onClick={ConvertCamel}>Convert to Camel Case</button>
- <button className="ms-2 btn btn-success" onClick={Copytoclip}>Copy to Clip Board</button>
- <button className="ms-2 btn btn-info" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
- <button  className="ms-2 btn btn-dark" onClick={reset}>Reset</button>
+ <button className="m-2 btn btn-primary" onClick={ConvertUpClick}>Convert to Upper Case</button>
+ <button  className="m-2 btn btn-danger" onClick={ConvertlowClick}>Convert to Lower Case</button>
+ <button  className="m-2 btn btn-warning" onClick={ConvertCamel}>Convert to Camel Case</button>
+ <button className="m-2 btn btn-success" onClick={Copytoclip}>Copy to Clip Board</button>
+ <button className="m-2 btn btn-info" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
+ <button  className="m-2 btn btn-dark" onClick={reset}>Reset</button>
  
 </div>
 <div className='my-2 container'>
